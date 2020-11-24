@@ -1,14 +1,10 @@
 package isa.utm.Figure;
 
-public class Figure {
+public abstract class Figure {
     protected double area;
     protected double perimeter;
 
-    public double getArea() {
-        return this.area;
-    }
+    public abstract double getArea();
 
-    public double getPerimeter() {
-        return this.perimeter;
-    }
+    public abstract double getPerimeter();
 }

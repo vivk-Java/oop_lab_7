@@ -5,4 +5,14 @@ public class Rectangle extends Figure {
         super.perimeter = 2 * (length + width);
         super.area = length * width;
     }
+
+    @Override
+    public double getArea() {
+        return super.area;
+    }
+
+    @Override
+    public double getPerimeter() {
+        return super.perimeter;
+    }
 }

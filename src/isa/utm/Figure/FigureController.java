@@ -11,7 +11,7 @@ public class FigureController {
         Figure figure = figures.get(0);
 
         for (Figure value : figures) {
-            if (value.perimeter > figure.perimeter) {
+            if (value.getPerimeter() > figure.getPerimeter()) {
                 figure = value;
             }
         }
@@ -27,7 +27,7 @@ public class FigureController {
         Figure figure = figures.get(0);
 
         for (Figure value : figures) {
-            if (value.area > figure.area) {
+            if (value.getArea() > figure.getArea()) {
                 figure = value;
             }
         }

@@ -5,4 +5,14 @@ public class Square extends Figure {
         super.perimeter = 4 * size;
         super.area = size * size;
     }
+
+    @Override
+    public double getArea() {
+        return super.area;
+    }
+
+    @Override
+    public double getPerimeter() {
+        return super.perimeter;
+    }
 }

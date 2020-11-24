@@ -24,14 +24,30 @@ public class Main {
                 biggestPerimeter.getClass().getSimpleName() + " : " +
                 biggestPerimeter.getPerimeter());
 
+
+
+        /*
         class Circle extends Figure {
             public Circle(double radius) {
                 super.perimeter = 2 * Math.PI * radius;
                 super.area = Math.PI * radius * radius;
             }
         }
+        */
 
-        figures.add(new Circle(5));
+        double circleRadius = 10;
+
+        figures.add(new Figure() {
+            @Override
+            public double getArea() {
+                return Math.PI * circleRadius * circleRadius;
+            }
+
+            @Override
+            public double getPerimeter() {
+                return 2 * Math.PI * circleRadius;
+            }
+        });
 
         biggestArea = figureController.getBiggestArea(figures);
         println("Biggest Area after Circle add : " +

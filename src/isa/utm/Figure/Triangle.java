@@ -9,4 +9,14 @@ public class Triangle extends Figure {
                 half * (half - a) * (half - b) * (half - c)
         );
     }
+
+    @Override
+    public double getArea() {
+        return super.area;
+    }
+
+    @Override
+    public double getPerimeter() {
+        return super.perimeter;
+    }
 }
